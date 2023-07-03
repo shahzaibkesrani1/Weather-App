@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App | Shahzaib Kesrani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <input type="text" placeholder="Enter Your Location" class="input-b">
+                <button id="btn" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+
+        <div class="location">
+            <h1>Sorry Your Location Not Found</h1>
+            <img src="images/404.png" alt="">
+        </div>
+        <div class="weather-body">
+            <img src="images/cloud.png" alt="" class="Weather-img">
+
+            <div class="weather-box">
+                <p class="temperature"><sup></sup></p>
+                <p class="description"></p>
+            </div>
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                    <div class="text">
+                        <span id="humidity"></span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind"></span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="sk.js"></script>
+</body>
+
+</html>
